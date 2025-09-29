@@ -35,6 +35,7 @@ Even though data are synthetic, the methods are directly transferable to EMR and
 
 ## Quick start
 
+```bash
 git clone https://github.com/ivkarla/rwd-sql-python-demo
 cd rwd-sql-python-demo
 conda create -n rwd-demo python=3.10

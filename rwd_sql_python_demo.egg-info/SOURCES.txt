@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+rwd_sql_python_demo.egg-info/PKG-INFO
+rwd_sql_python_demo.egg-info/SOURCES.txt
+rwd_sql_python_demo.egg-info/dependency_links.txt
+rwd_sql_python_demo.egg-info/requires.txt
+rwd_sql_python_demo.egg-info/top_level.txt

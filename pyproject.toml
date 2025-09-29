@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rwd-sql-python-demo"
+version = "0.1.0"
+description = "RWD SQL Python Demo"
+readme = "README.md"
+
+license = { text = "GNU GENERAL PUBLIC LICENSE" }
+requires-python = ">=3.9"
+
+dependencies = [
+    "pandas>=2.2.2",
+    "numpy>=1.23.0",
+    "scikit-learn>=1.4.2",
+    "matplotlib>=3.8.0",       
+    "seaborn>=0.13.2",
+    "jupyter>=1.0.0",
+    "notebook>=6.5.4",
+    "ipython-sql>=0.4.0",
+    "sqlite3"]
+
+[tool.setuptools.packages.find]
+where = ["."]

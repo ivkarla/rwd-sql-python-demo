@@ -1,0 +1,70 @@
+Metadata-Version: 2.4
+Name: rwd-sql-python-demo
+Version: 0.1.0
+Summary: RWD SQL Python Demo
+License: GNU GENERAL PUBLIC LICENSE
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas>=2.2.2
+Requires-Dist: scikit-learn>=1.4.2
+Requires-Dist: matplotlib>=3.8.0
+Requires-Dist: seaborn>=0.13.2
+Requires-Dist: jupyter>=1.0.0
+Requires-Dist: notebook>=6.5.4
+Dynamic: license-file
+
+# Real-World Data Analytics Demo (SQL + Python, OMOP-CDM)
+
+This repository demonstrates how to analyze synthetic **electronic medical records (EMR)** using the **OMOP Common Data Model (CDM)** framework.  
+
+---
+
+## Key Features
+
+- **SQL for cohort building**
+  - Example queries for patient selection, condition prevalence, and comorbidity co-occurrence.
+- **Python for predictive modeling**
+  - Logistic regression applied to respiratory outcomes.
+- **OMOP-CDM structure**
+  - `person` table (demographics: age, sex, race).  
+  - `condition_occurrence` table (SNOMED-coded conditions).  
+- **Clinical terminologies**
+  - Uses OMOP `condition_concept_id`s mapped to SNOMED CT, compatible with ICD.  
+- **Visualization**
+  - Co-occurrence heatmaps, cohort characterization plots, feature importance analysis.  
+
+---
+
+## Example Analyses
+
+1. **Cohort Characterization**  
+   - Age and race distribution of patients with acute bronchitis.  
+
+2. **Comorbidity Co-occurrence**  
+   - Heatmap showing frequent co-occurrence of bronchitis with viral pharyngitis, sinusitis, and otitis media.  
+
+3. **Predictive Modeling**  
+   - Logistic regression to predict acute bronchitis from patient comorbidities and demographics.  
+   - Feature importance plot showing top predictors.  
+
+---
+
+## Relevance to RWE
+
+This demo showcases the core workflow used in RWE analytics:  
+
+- Cohort definition
+- Comorbidity analysis
+- Predictive modeling
+- Visualization & interpretation
+
+Even though data are synthetic, the methods are directly transferable to EMR and claims data.  
+
+---
+
+## How to run
+
+1. Clone this repository  
+2. Install dependencies (`requirements.txt`)  
+3. Open Jupyter notebook for SQL / Python analysis
